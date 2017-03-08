@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+
+    <title>Reese's JavaScript Cups</title>
+
+    <script>
+    function onLoad() {
+      console.log('here be the embedded script tag\'s console.log');
+
+      var ourNode =
+      document.querySelector('#our-event-node');
+
+      function logOurEvent () {
+      coonsole.log('Here be our node\'s console.log');
+      }
+
+      ourNode.oneclick = logOurEvent;
+    }
+
+    </script>
+    <!-- embedded style -->
+
+  </head>
+  <body>
+
+      <p id="our-event-node">our first event node</p>
+      <!-- links embedded -->
+
+      <p oneclick="console.log('You cam - but rarely should use inline events')">our second event</p>
+      <!-- Inline Style -->
+
+    <script src="./scripts/app.js"></script>
+    <!-- external style  -->
+
+  <!-- DON'T DO THIS
+      <script src="./scripts/app.js">console.log('here be the embedded script tag\'console.log')
+      </script>
+  -->
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+Python (var, let and const)
+
+let letStr = 'let str';
+const constStr = 'const str';
+
+console.log(varStr);
+console.log(letStr);
+console.log(constStr);
+
+varStr = 'new var str';
+letstr = 'new let str';
+
+console.log(varStr);
+console.log(letStr);
+console.log(constStr);
+
+var varStr = 'var str';
+
+http://pythontutor.com/javascript.html#code=let%20letStr%20%3D%20'let%20str'%3B%0Aconst%20constStr%20%3D%20'const%20str'%3B%0A%0Aconsole.log%28varStr%29%3B%0Aconsole.log%28letStr%29%3B%0Aconsole.log%28constStr%29%3B%0A%0AvarStr%20%3D%20'new%20var%20str'%3B%0Aletstr%20%3D%20'new%20let%20str'%3B%0A%0Aconsole.log%28varStr%29%3B%0Aconsole.log%28letStr%29%3B%0Aconsole.log%28constStr%29%3B%0A%0Avar%20varStr%20%3D%20'var%20str'%3B%0A&mode=edit&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D
+
+Python (function)
+
+function funcDeclaration(para) {
+  console.log('funcDeclaration called with', para);
+}
+
+var funcExpresssion = function (param) {
+  console.log('funcExpression called with', param);
+}
+
+const fatArrowFunc1 = param => console.log('fatArrowFunc1 called with, param');
+
+const fatArrowFunc2 = (param1, param2) => {
+  console.log('fatArrowFunc2 called with', param1, 'and', param2);
+}
+
+funcDeclaration("argument");
+funcExpression("arguemtent");
+fatArrowFunc1("argument");
+fatArrowFunc2("arg1", "arg2");
+
+-Rule: "function declarations" can be positioned anywhere
+
+http://pythontutor.com/javascript.html#code=%28function%20%28%29%20%7B%0A%20%20%0A%0Alet%20big%20%3D%20%22big%22%0Alet%20pile%20%3D%20%22pile%22%0A%0Afunction%20funcDeclaration%28big,%20pile,%20o,%20poo%29%20%7B%0A%20%20console.log%28'funcDeclaration%20called%20with',%20pile%29%3B%0A%7D%0AfuncDeclaration%28%22argument%22,%20%22arg%202%22%29%3B%0A%0Avar%20funcExpression%20%3D%20function%20%28param%29%20%7B%0A%20%20console.log%28'funcExpression%20called%20with',%20param%29%3B%0A%7D%0A%0Aconst%20fatArrowFunc1%20%3D%20param%20%3D%3E%20console.log%28'fatArrowFunc1%20called%20with',%20param%29%0A%0Aconst%20fatArrowFunc2%20%3D%20%28param1,%20param2%29%20%3D%3E%20%7B%0A%20%20console.log%28'fatArrowFunc2%20called%20with',%20param1,%20'and',%20param2%29%3B%0A%7D%0A%0AfuncExpression%28%22argument%22%29%3B%0AfatArrowFunc1%28%22argument%22%29%3B%0AfatArrowFunc2%28%22arg1%22,%20%22arg2%22%29%3B%0A%0A%7D%29%28%29%0A&curInstr=5&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D
